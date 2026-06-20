@@ -1,0 +1,45 @@
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+
+# Generated data
+data/*.csv
+data/*.parquet
+data/*.feather
+
+# Generated plots / output images
+*.png
+*.jpg
+*.jpeg
+*.svg
+!assets/images/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbgrader.*
+jupyter_execute/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Experiments / logs
+experiments/
+logs/
+*.log
