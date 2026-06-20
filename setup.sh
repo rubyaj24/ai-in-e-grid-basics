@@ -20,11 +20,15 @@ echo "[2/4] Upgrading pip..."
 venv/bin/python -m pip install --upgrade pip
 
 # Step 3
-echo "[3/4] Installing dependencies..."
+echo "[3/5] Installing dependencies..."
 venv/bin/pip install -r requirements.txt
 
 # Step 4
-echo "[4/4] Generating synthetic smart meter data..."
+echo "[4/5] Installing project package..."
+venv/bin/pip install -e .
+
+# Step 5
+echo "[5/5] Generating synthetic smart meter data..."
 venv/bin/python -m egrid_learning.data.generator
 
 echo ""

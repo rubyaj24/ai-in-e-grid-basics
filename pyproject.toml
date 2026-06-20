@@ -10,12 +10,12 @@ readme = "README.md"
 requires-python = ">=3.10"
 
 dependencies = [
-    "pandas>=2.0",
-    "numpy>=1.24",
-    "scikit-learn>=1.3",
-    "matplotlib>=3.7",
+    "pandas>=2.3.3",
+    "numpy>=2.3.2",
+    "scikit-learn>=1.8.0",
+    "matplotlib>=3.9.2",
     "streamlit>=1.28",
-    "pandapower>=2.12",
+    "pandapower>=3.4.0",
     "jupyter>=1.0",
 ]
 
@@ -26,3 +26,4 @@ dev = [
 
 [tool.setuptools.packages.find]
 where = ["src"]
+namespaces = true

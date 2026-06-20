@@ -9,8 +9,8 @@ hands-on build. The battery uses simple rules — contrast this with
 what a learned policy could do.
 """
 
-from src.egrid_learning.grid_sim.dispatch import build_network, run_power_flow, simulate_day
-from src.egrid_learning.visualization.plots import plot_grid_dispatch
+from egrid_learning.grid_sim.dispatch import build_network, run_power_flow, simulate_day
+from egrid_learning.visualization.plots import plot_grid_dispatch
 
 print("=" * 55)
 print("  DEMO 4: Grid Optimization Teaser")

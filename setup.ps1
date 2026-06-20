@@ -21,11 +21,15 @@ Write-Host "[2/4] Upgrading pip..." -ForegroundColor Yellow
 & "venv\Scripts\python.exe" -m pip install --upgrade pip
 
 # Step 3: Install dependencies
-Write-Host "[3/4] Installing dependencies..." -ForegroundColor Yellow
+Write-Host "[3/5] Installing dependencies..." -ForegroundColor Yellow
 & "venv\Scripts\pip.exe" install -r requirements.txt
 
-# Step 4: Generate data
-Write-Host "[4/4] Generating synthetic smart meter data..." -ForegroundColor Yellow
+# Step 4: Install project package
+Write-Host "[4/5] Installing project package..." -ForegroundColor Yellow
+& "venv\Scripts\pip.exe" install -e .
+
+# Step 5: Generate data
+Write-Host "[5/5] Generating synthetic smart meter data..." -ForegroundColor Yellow
 & "venv\Scripts\python.exe" -m egrid_learning.data.generator
 
 Write-Host ""

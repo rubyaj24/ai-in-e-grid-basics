@@ -10,8 +10,8 @@ Compare recall and precision to see the trade-offs.
 """
 
 import pandas as pd
-from src.egrid_learning.models.anomaly import run_all
-from src.egrid_learning.visualization.plots import plot_anomaly_detection
+from egrid_learning.models.anomaly import run_all
+from egrid_learning.visualization.plots import plot_anomaly_detection
 
 DATA_PATH = "data/smart_meter_data.csv"
 

@@ -10,8 +10,8 @@ Then we show you which features the Random Forest thinks matter most.
 """
 
 import pandas as pd
-from src.egrid_learning.models.forecasting import run_all, FEATURES
-from src.egrid_learning.visualization.plots import (
+from egrid_learning.models.forecasting import run_all, FEATURES
+from egrid_learning.visualization.plots import (
     plot_forecast,
     plot_model_comparison,
 )
